@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATTORNEY LAW FIRM</title>
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.my-navimg{
+		width: 300px;
+		height: 80px;
+		transition: ease .4s;
+	}
+	.my-navimg:hover{
+	     filter: opacity(70%);
+	}
+	.my-navlink{
+		color: #1f232b;
+		margin-left: 20px;
+		margin-right: 20px;
+		font-weight: bolder;
+		font-size: 13px;
+		transition: .4s;
+	}
+	.my-navlink:hover{
+		color: #dfc370;
+		background:none;
+	}
+	.my-button{
+		margin-left: -365px;
+		margin-top: 200px; 
+		height: 50px;
+		width: 350px;
+		color: white;
+		background-color:  #dfc370;
+		border: none;
+		border-radius: 2px;
+		font-weight: bolder;
+	}
+	.my-button:hover{
+		background: none;
+		color:  #dfc370;
+		border: solid  #dfc370 2px;
+		border-radius: 2px;
+	}
+	.my-bouncer{
+		filter: contrast(2%);
+		transition:ease .6s;
+	}
+	.my-bouncer:hover{
+		filter: contrast(100%);
+		cursor: pointer;
+		transform: scale(1.1,1.1) rotate(360deg);
+	}
+	
+	.my-background{
+		width: 100%;
+		height: 800px;
+		float: left;
+		background-image: url( images/bg2-2.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		margin-top: 150px;
+	}
+	.my-background-div{
+		background-color:  white; 
+		border-radius: 0px ; 
+		height:300px;
+	}
+	.my-divfont{
+		color: #1f232b;
+		height: 300px;
+	}
+	.my-heading{
+		margin-top: 50px;
+		line-height: 25px;
+		font-weight: bolder;
+		transition: ease.6s;
+		cursor: pointer;
+	}
+	.my-heading:hover{
+		color:  #dfc370;
+	}
+	.my-icon{
+		width: 90px;
+		height: 90px;
+		background-color: #dfc370;
+		border-radius: 100%;
+		margin-left: -50px;
+		margin-top: -45px;
+		transition: ease .4s;
+		
+	}
+	.my-icon:hover{
+		transform: scale(1.1,1.1) rotate(360deg);
+		cursor: pointer;
+	}
+	.my-rowimg{
+		position: absolute;
+	    background: none;
+		height: 100%;
+		transition: ease 0.5s;
+		opacity: 0;
+		
+		
+	}
+	
+	.my-rowimg:hover{
+		background-color: rgba(38,38,38,.5);
+		padding-top: 150px;
+		opacity: 1;
+		
+	}
+	.my-rowimg-icon{
+		
+	}
+	.my-rowimg-icon:hover{
+		color: black;
+	}
+	.my-team{
+		cursor: pointer;
+		filter: opacity(70%);
+	}
+	.my-team:hover{
+		filter: opacity(200%);
+	
+	}
+	.my-phase-background{
+		background-image: url(images/bg5.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+	}
+	.my-text-hover{
+		color:gray;
+		transition: ease .4s;
+	}
+	.my-text-hover:hover{
+		color:#dfc370;
+		cursor: pointer;
+	}
+	.my-footer-link{
+		color: gray;
+		transition: ease .4s;
+		
+	}
+	.my-footer-link:hover{
+		color:white;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	.my-footer-icons{
+		background-color: #507cbe;
+		border: solid #507cbe 1px;
+		border-radius: 100%;
+		color: white;
+		width: 70px;
+		height: 70px;
+		padding-top: 20px;
+		transition: ease .4s;
+	}
+	.my-footer-icons:hover{
+		background: none !important;
+		border-color: white  !important;
+	}
+	.form-control::placeholder{
+		color: white;
+	}
+	</style>
+	
+	
+	
+  <script>
+	function myteam(src)
+	  {
+		  document.getElementById('team').src=src;
+	  }
+	</script>
+
+<body>
+	<nav class="navbar bg-light navbar-expand-md">
+	<a href="" class="navbar-brand"> <img src="images/Logo.png" class="my-navimg img-fluid" ></a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#mynav"> <span class="fa fa-navicon fa-2x" ></span></button>
+	<div class="collapse navbar-collapse" id="mynav">
+	<ul class="navbar-nav m-auto text-center">
+	<li class="nav-item"><a href="" class="nav-link my-navlink">HOMEPAGE</a></li>
+	<li class="nav-item"><a href="" class="nav-link my-navlink">PAGES</a></li>
+	<li class="nav-item"><a href="" class="nav-link my-navlink">ABOUT</a></li>
+	<li class="nav-item"><a href="" class="nav-link my-navlink">CANDIDATE</a></li>
+	<li class="nav-item dropdown"><a href="" class="nav-link my-navlink" data-toggle="dropdown">BOARDS</a>
+	<ul class="dropdown-menu">
+		<li class="dropdown-item"><a href="" class="nav-link my-navlink">JOB CATEGORY</a></li>
+		<li class="dropdown-item"><a href="" class="nav-link my-navlink">SINGLE JOB</a></li>
+	</ul>
+	</li>
+	<li class="nav-item"><a href="" class="nav-link my-navlink">SERVICES</a></li>
+	<li class="nav-item"><a href="" class="nav-link my-navlink">BLOG</a></li>
+	<li class="nav-item"><a href="" class="nav-link my-navlink">CONTACT</a></li>
+	</ul>	
+	</div>
+	</nav>
+	
+	
+	
+	
+	<div class="carousel slide" data-ride="carousel" id="slider">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/1.jpg" class="img-fluid">
+				<div class="jumbotron position-absolute carousel-caption text-left " style="height:  500px;margin-left: -70px; background: none; ">
+				<h1 class="animate__animated animate__backInRight" style="font-weight: lighter; margin-bottom: -30px; ">Leader in their Field</h1><br>
+
+				<h1 class="animate__animated animate__backInLeft" style="float: left; font-weight: bolder; font-size: 70px; line-height: 55px;">LAW FIRM<br>
+                       FOR <br>
+					BUISSNESS</h1>
+					<button class="my-button animate__animated animate__backInUp">SUBSCRIBE TO NEWSLETTER</button>
+				</div>
+			</div>
+			<div class="carousel-item ">
+				<img src="images/2.jpg" class="img-fluid">
+			<div class="jumbotron position-absolute carousel-caption text-left " style="height:  500px;margin-left: -70px; background: none; ">
+				<h1 class="text-center animate__animated animate__bounceInDown" style="font-weight: lighter; margin-bottom: -30px; ">Leader in their Field</h1><br>
+
+				<h1 class="text-center animate__animated animate__bounceInDown" style="font-weight: bolder; font-size: 70px; line-height: 55px;">WE LOOK<br>
+                     AT THE LAW<br>
+                      DIFFERENTLY</h1>
+					<button class="my-button animate__animated animate__bounceInUp" style="margin-left: 360px; margin-top: 30px;">JOIN OUR HR</button>
+				</div>
+			</div>
+			<div class="carousel-item ">
+				<img src="images/3.jpg" class="img-fluid">
+				<div class="jumbotron position-absolute carousel-caption text-left " style="height:  500px; background: none; ">
+				<h1 class="text-center animate__animated animate__fadeInLeft" style="font-weight: lighter; margin-bottom: -30px;">Leader in their Field</h1><br>
+
+				<h1 class="text-center animate__animated animate__fadeInRight" style="font-weight: bolder; font-size: 70px; line-height: 55px;">BUITL ON<br>
+                       RELATIONSHIP</h1>
+					<button class="my-button animate__animated animate__fadeInUp" style="margin-left: 340px; margin-top: 30px;">UPLOAD YOUR CV's</button>
+				</div>
+			</div>
+		     <a href="#slider " data-slide="prev" class="carousel-control-prev">
+		     	<span class="carousel-control-prev-icon"></span>
+		     </a>
+		      <a href="#slider " data-slide="next" class="carousel-control-next">
+		     	<span class="carousel-control-next-icon"></span>
+		     </a>
+		     
+		     
+		     
+		     <div class="jumbotron position-absolute mb-0" style="width: 100%; border-radius: 0px; bottom: 0; background: rgba(0,0,0,.4);">
+		     	<div class="row text-center">
+		     		<div class="col-md-4 " >
+		     			<h4 style="color:#dfc370; font-weight: bolde; margin-bottom: 0">CALL US 24/7</h4>
+		     			<h1 style="color: white; font-weight:lighter;" >+123-456-7890</h1>
+		     		</div>
+		     		
+		     		<div class="col-md-4">
+		     			<h4 style="color:#dfc370; font-weight: bolde; margin-bottom: 0">EMAIL ADDRESS</h4>
+		     			<h1 style="color: white; font-weight:lighter;" >example@example.com</h1>
+		     		</div>
+		     		<div class="col-md-4">
+		     			<h4 style="color:#dfc370; font-weight: bolde; margin-bottom: 0">OEN HOURS</h4>
+		     			<h1 style="color: white; font-weight:lighter;" >DAILY 9:00-20:00</h1>
+		     		</div>
+		     	</div>
+		     </div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4 style="margin-top: 150px; font-weight:; color: black;">WELCOME TO LAW FIRM</h4>
+				<h1 style="font-weight: bolder; color:  #dfc370;margin-top: -15px; margin-left: ; font-size: 50px; ">WHY CHOOSE US ?</h1>
+				<p  class="font-italic" style="color:#1f232b ; margin-top: 40px; text-align: justify" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat placerat congue. Donec in velit at lectus ultrices tincidunt vel eget nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras suscipit metus sed justo auctor accumsan et ac mauris.</p>
+				<ul class="font-italic" style="color:#1f232b ; margin-top: 40px;">
+					<li>Cras  suscipit metus</li>
+					<li>Cras  suscipit metus</li>
+					<li>Cras  suscipit metus</li>
+				</ul>
+				<button class="my-button" style="margin-left: 100px; margin-top: 80px;">MORE ABOUT US</button>
+			</div>
+			<div class="col-md-6" >
+			 <img src="images/5.png" class="img-fluid " >
+			</div>
+		</div>
+	</div>
+		
+		
+		<div class="container-fluid">
+		<div class="row" style="margin-top: 100px;">
+		<div class="col-md-2"> <img src="images/1a.png" class="img-fluid my-bouncer"></div>
+		<div class="col-md-2"><img src="images/2a.png" class="img-fluid my-bouncer"></div>
+		<div class="col-md-2"><img src="images/3a.png" class="img-fluid my-bouncer"></div>
+		<div class="col-md-2"><img src="images/4a.png" class="img-fluid my-bouncer"></div>
+		<div class="col-md-2"><img src="images/5a.png" class="img-fluid my-bouncer"></div>
+		<div class="col-md-2"><img src="images/6a.png" class="img-fluid my-bouncer"></div>
+			</div>
+		</div>
+	
+	
+	
+	
+	<div class="my-background" style="margin-bottom: 200px;">
+            
+            <div  class="container mt-5 text-center ">
+	      <h4 style="color: white; font-weight: lighter;margin-bottom: -10px;">OUR</h4>
+	      <h1 style="color: white; font-weight: bolder;">SERVICES</h1>
+            
+            <div class="row " style="margin-top: 100px;">
+            <div class="col-md-4">
+            <span class="my-icon position-absolute"><span class="fa fa-balance-scale fa-2x mt-4" style="color: white; "></span></span>
+            	<div class="container-fluid bg-white " style="padding: 50px; margin-bottom: 30px;" >
+            		<h3 class="my-heading">Drumstick <br> Turkey Venison</h3>
+            		<p style="color: #80808; margin-top: 30px;" >Kielbasa ball tip chuck pork <br> belly shankle landjaeger <br> leberkas pork loin cow.</p>
+            	</div>
+            </div>
+            
+            <div class="col-md-4">
+                   <span class="my-icon position-absolute"><span class="fa fa-bank fa-2x mt-4" style="color: white; margin-bottom: 30px;"></span></span>
+						<div class="container-fluid bg-white " style="padding: 50px;">
+            		<h3 class="my-heading">Doner <br>Landjaeger</h3>
+            		<p style="color: #80808; margin-top: 30px;" >Filet mignon ball tip shoulder <br>leberkas pork chop venison <br> jerky ham.</p>
+            	</div>
+				</div>
+            <div class="col-md-4">
+            <span class="my-icon position-absolute"><span class="fa fa-balance-scale fa-2x mt-4" style="color: white; "></span></span>
+            	<div class="container-fluid bg-white " style="padding: 50px; margin-bottom: 30px;">
+            		<h3 class="my-heading" >Pork Pastrami <br> Pancetta</h3>
+            		<p style="color: #80808; margin-top: 30px;" >Pork chop pork belly <br> hamburger prosciutto, fatback <br> andouille flank.</p>
+            	</div>
+            </div>
+            	
+            </div>
+	
+		</div>
+		</div>
+		
+		
+		
+		
+		<div class="container text-center " >
+		<div style=" ">
+		<h3 style="">OUR</h3>
+		<h1 style="margin-top: -15px; font-weight: bolder; margin-bottom: 50px; ">PRACTISE AREAS</h1>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-4" > <img src="images/download.png" class="img-fluid">
+				<h1 style="margin-top: -160px; font-weight: bolder; font-size: 55px; color: gray">36%</h1> <h3 style="margin-top: 100px; ">SUCCESSFUL CASES</h3> <h6 style="color: gray">638 We Helped</h6></div>
+				
+				<div class="col-md-4" > <img src= "images/download (1).png" class="img-fluid">
+				<h1 style="margin-top: -160px; font-weight: bolder; font-size: 55px; color: gray">66%</h1> <h3 style="margin-top: 100px; ">HONOUR & AWARDS</h3> <h6 style="color: gray">638 We Helped</h6></div>
+				
+				<div class="col-md-4"> <img src="images/download (2).png" class="img-fluid">
+				<h1 style="margin-top: -160px; font-weight: bolder; font-size: 55px; color: gray">85%</h1> <h3 style="margin-top: 100px; ">SUCCESSFUL CLIENTS</h3> <h6 style="color: gray">638 We Helped</h6></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="container-fluid">
+		<div class="row mt-5 pt-5">
+			
+			<div class="col-md-3  pl-0 pr-0"> 
+			<div class="container my-rowimg text-center " > 
+			 <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a>
+			 <a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a>
+			 </div>
+			 <img src="images/r1.jpg" class="" style="width: 100%; height: 100%;" >
+			 </div>
+			<div class="col-md-3 pl-0 pr-0">  <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div> <img src="images/r2.jpg" class="" style="width: 100%; height: 100%;" ></div>
+            <div class="col-md-3 pl-0 pr-0">  <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div> <img src="images/r3.jpg" class="" style="width: 100%; height: 100%;" ></div>
+            <div class="col-md-3 pl-0 pr-0">  <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div> <img src="images/r4.jpg" class="" style="width: 100%; height: 100%;" ></div>
+
+		</div>
+		<div class="row ">
+			<div class="col-md-3 pl-0 pr-0">  <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div> <img src="images/r5.jpg"  class="" style="width: 100%; height: 100%;"></div>
+			<div class="col-md-3 pl-0 pr-0"> <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div> <img src="images/r6.jpg" class="" style="width: 100%; height: 100%;" ></div>
+            <div class="col-md-3 pl-0 pr-0">  <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div> <img src="images/r7.jpg" class="" style="width: 100%; height: 100%;"></div>
+            <div class="col-md-3 pl-0 pr-0"> <div class="container my-rowimg text-center " >  <a href=""><span class="fa fa-search fa-2x text-center my-rowimg-icon" style="color:#dfc370; margin-right: 20px; "></span></a><a href=""><span class="fa fa-map-marker fa-2x text-center my-rowimg-icon" style="color: #dfc370; "></span></a></div><img src="images/r8.jpg" class="" style="width: 100%; height: 100%;"></div>
+
+		</div>
+		</div>
+		
+		
+		
+		
+		<div class="container mt-5 pt-5">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-5">
+			<ul style="list-style: none; margin-top: 200px;"><li><h1 style="color: #1f232b;font-size:34px;font-weight: bolder; " class="my-team" onClick="myteam('images/t1.PNG')">Jeremiah Castro <span style="color: #dfc370;">Director</span></h1></li>
+			<li><h1 style="color: #1f232b;font-size:34px;font-weight: bolder; " onClick="myteam('images/t2.PNG')" class="my-team">Cecilia Guzman  <span style="color: #dfc370;">Manager</span></h1></li>
+			<li><h1 style="color: #1f232b;font-size:34px;font-weight: bolder; " onClick="myteam('images/t3.PNG')" class="my-team">Alex Cooper <span style="color: #dfc370;">CEO</span></h1></li>
+			<li><h1 style="color: #1f232b;font-size:34px;font-weight: bolder; " onClick="myteam('images/t4.PNG')" class="my-team">Addie Vargas  <span style="color: #dfc370;">Manager</span></h1></li></ul></div>
+			
+			<div class="col-md-5">
+			<img src="images/t1.PNG" style="filter:opacity(50%);" class="img-fluid" id="team">
+			</div>
+		</div>
+			</div>
+			
+			
+			
+			
+		<div class="jumbotron text-center my-phase-background" style="border-radius: 0px; padding-top: 100px;padding-bottom: 100px; ">
+				<div class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="images/phase1.jpg" class="img-fluid" style="border-radius: 100%; margin-bottom: 120px;">
+							<div class="carousel-caption " style="">
+							<h4 class="text-white" style="font-weight: lighter; line-height: 0px; margin-bottom: ">JESSICE J.</h4>
+							<h1 class="text-white" style="font-weight: bolder;">AUMILLER</h1>
+							<h1 style="font-weight: bolder;color:#dfc370; margin-bottom: 25px;">"</h1>
+							</div>
+							<div class="container">
+							<p style="text-align: center;color: white; font-style: italic;" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptatum odio fugiat totam maxime debitis similique ab vitae ipsa ducimus blanditiis enim, dolore ut corporis possimus. <br> Sapiente sequi cumque tempore voluptatem. ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+							</div>
+						</div>
+						
+						<div class="carousel-item ">
+								<img src="images/phase2.jpg" class="img-fluid" style="border-radius: 100%; margin-bottom: 120px;">
+							<div class="carousel-caption " style="">
+							<h4 class="text-white" style="font-weight: lighter; line-height: 0px; margin-bottom: ">SAMMY</h4>
+							<h1 class="text-white" style="font-weight: bolder;">WINCHEL</h1>
+							<h1 style="font-weight: bolder;color:#dfc370; margin-bottom: 25px;">"</h1>
+							</div>
+							<div class="container">
+							<p style="text-align: center; font-style: italic; color: white;" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptatum odio fugiat totam maxime debitis similique ab vitae ipsa ducimus blanditiis enim, dolore ut corporis possimus. <br> Sapiente sequi cumque tempore voluptatem. ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+							</div>
+						</div>
+						<div class="carousel-item ">
+								<img src="images/phase3.jpg" class="img-fluid" style="border-radius: 100%; margin-bottom: 120px;">
+							<div class="carousel-caption " style="">
+							<h4 class="text-white" style="font-weight: lighter; line-height: 0px; margin-bottom: ">MICHAEL J.</h4>
+							<h1 class="text-white" style="font-weight: bolder;">CARTER</h1>
+							<h1 style="font-weight: bolder;color:#dfc370; margin-bottom: 25px;">"</h1>
+							</div>
+							<div class="container">
+							<p style="text-align: center; font-style: italic; color:white;" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Voluptatum odio fugiat totam maxime debitis similique ab vitae ipsa ducimus blanditiis enim, dolore ut corporis possimus. <br> Sapiente sequi cumque tempore voluptatem. ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<div class="container text-center mt-5 pt-5">
+			    <h1 style="font-weight: lighter; color:#1f232b; line-height: 0px; ">OUR</h1>
+			    <h1 style="font-weight: bolder; color:#1f232b; ">BLOG POSTS</h1>
+			
+			<div class="row">
+				<div class="col-md-4">
+				<img src="images/b2.jpg"  class="img-fluid  " >
+				<h5 style="font-style: italic; font-weight: bolder;">Modernising our talent <br>programmes</h5> <p style="font-style: italic;text-align: center;">The world of work has changed <br> and the appetite for spending <br>long periods of time…</p></div>
+				
+				<div class="col-md-4">
+							<img src="images/b3.jpg"  class="img-fluid  " >
+				<h5 style="font-style: italic; font-weight: bolder;">Modernising our talent <br>programmes</h5> <p style="font-style: italic;text-align: center;">The world of work has changed <br> and the appetite for spending <br>long periods of time…</p></div>
+				
+				
+				<div class="col-md-4">
+							<img src="images/b1.jpg"  class="img-fluid  " >
+				<h5 style="font-style: italic; font-weight: bolder;">Modernising our talent <br>programmes</h5> <p style="font-style: italic;text-align: center;">The world of work has changed <br> and the appetite for spending <br>long periods of time…</p></div>
+				</div>
+				
+				
+	</div>
+		<footer class="container-fluid pl-0 pr-0 mt-5 mb-0">
+		<div class="jumbotron pt-5 pb-4 mb-0" style="border-radius: 0px; background-color: #dfc370;">
+                   <div class="row text-center">
+		     		<div class="col-md-4 " >
+		     			<h4 style="color:#FFFFFF; font-weight: bolde; margin-bottom: 0">CALL US 24/7</h4>
+		     			<h1 style="color: white; font-weight:lighter;" >+123-456-7890</h1>
+		     		</div>
+		     		
+		     		<div class="col-md-4">
+		     			<h4 style="color:#FFFFFF; font-weight: bolde; margin-bottom: 0">EMAIL ADDRESS</h4>
+		     			<h1 style="color: white; font-weight:lighter;" >example@example.com</h1>
+		     		</div>
+		     		<div class="col-md-4">
+		     			<h4 style="color:#FFFFFF; font-weight: bolde; margin-bottom: 0">OEN HOURS</h4>
+		     			<h1 style="color: white; font-weight:lighter;" >DAILY 9:00-20:00</h1>
+		     		</div>
+		     	</div>
+		</div>
+		
+		<div class="jumbotron p-0 mb-0" style="border-radius: 0px;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3137080837128!2d67.14963081447813!3d24.88727885031247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1596610564240!5m2!1sen!2s"  frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+		
+		
+		<div class="jumbotron  mt-0 mb-0" style="border-radius: 0px; background-image: url(images/footer-BG.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center;">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="images/logo2.png" class="img-fluid mb-4">
+					<p style="color: gray">
+						<span class="fa fa-map-marker " style="color:#dfc370; letter-spacing: 10px;"></span>
+						 4518 Spirit Drive, Deland, FL 32720
+					</p>
+					<p style="color: gray">
+						<span class="fa fa-phone " style="color:#dfc370; letter-spacing: 10px;"></span>
+						  101 123 456 789
+					</p>
+					<p style="color: gray">
+						<span class="fa fa-phone " style="color:#dfc370; letter-spacing: 10px;"></span>
+						   133 1333 456 789
+					</p>
+					<p style="" class="my-text-hover">
+						<span class="fa fa-envelope " style="color:#dfc370; letter-spacing: 10px;"></span>
+						   example@example.com
+					</p>
+					<span class="fa fa-2x fa-facebook my-footer-icons" ></span>
+					<span class="fa fa-2x fa-twitter my-footer-icons" style="background-color: #00abef; border-color: #00abef;"></span>
+					<span class="fa fa-2x fa-google my-footer-icons"  style="background-color: #d93e2d; border-color: #d93e2d;"></span>
+				</div>
+				<div class="col-md-4"> <h1 style="color: white; margin-bottom: 70px; margin-top: 10px;">EXPLORE</h1>
+				<a href="" class="my-footer-link mr-5"> Job Search</a> <span><a href="" class="my-footer-link"> Consultants</a></span> <hr color="grey" style="width: 300px; margin-top: 5px; margin-bottom: 20px;">
+				<a href="" class="my-footer-link mr-5"> Reviews</a> <span><a href="" class="my-footer-link"> Insights</a></span> <hr color="grey" style="width: 300px; margin-top: 5px; margin-bottom: 20px;">
+				<a href="" class="my-footer-link mr-5"> Servey</a> <span><a href="" class="my-footer-link"> Careers</a></span> <hr color="grey" style="width: 300px; margin-top: 5px; margin-bottom: 20px;">
+				<a href="" class="my-footer-link mr-5">Contact</a> <span><a href="" class="my-footer-link">About</a></span> <hr color="grey" style="width: 300px; margin-top: 5px; margin-bottom: 20px;"></div>
+				<div class="col-md-4">
+					<h1 style="color: white; margin-bottom: 70px; margin-top: 10px;">NEWSLETTER</h1>
+					<p style="color: grey">
+						Enter your email address here always to be <br> updated. We promise not to spam!
+					</p>
+					<input type="email" placeholder="EMAIL ADDRESS" style="background:none;
+					border:none; text-align:center; color:white;font-weight:bolder;" class="form-control">
+					<button class="my-button" style="margin-left: 50px; width: 200px; margin-top: 30px;">SUBSCRIBE</button>
+				</div>
+			</div>
+				<p class="text-secondary text-center" style="margin-top: 100px; font-size: 30px;">
+					© Copyright 2017 All Rights Reserved | designed By: M.Haseeb
+				</p>
+		</div>
+		</footer>	
+			
+</body>
+</html>
+	
